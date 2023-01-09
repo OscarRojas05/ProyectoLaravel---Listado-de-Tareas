@@ -1,6 +1,6 @@
 Informacion necesaria relacionada a la creacion del proyecto:
 - Se hace la instalación de laravel y su configuracion con la bd.
-- Para iniciar el servidor de laravel y funcione el proyecto
+- Para iniciar el servidor de laravel y funcione el proyecto: php artisan serve
 - Se procede a ejecutar el comando para la creacion de migraciones hacia la bd: php artisan make:migration create_tareas_table
 - php artisan migrate "para tener los cambios en la bd"
 - para eliminar las tablas anteriores: php artisan migrate:rollback
