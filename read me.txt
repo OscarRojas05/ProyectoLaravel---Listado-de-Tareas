@@ -1,0 +1,14 @@
+Informacion necesaria relacionada a la creacion del proyecto:
+- Se hace la instalación de laravel y su configuracion con la bd.
+- Para iniciar el servidor de laravel y funcione el proyecto
+- Se procede a ejecutar el comando para la creacion de migraciones hacia la bd: php artisan make:migration create_tareas_table
+- php artisan migrate "para tener los cambios en la bd"
+- para eliminar las tablas anteriores: php artisan migrate:rollback
+- Para que nuestra bd tenga mas tablas con sus columnas: se procede a modificar el archivo que esta ubicado en la database, en nuestro caso el que indica el nombre de la tabla TAREAS
+- Se procede a crear un modelo con el comando: php artisan make:model nombre_modelo
+- Se procede a crear un controlador con el comando: php artisan make:controller nombre_controlador
+php artisan make:controller nombre_controlador -r //para tener las funciones de un crud normal
+php artisan make:controller nombre_controlador -r --model=Tarea //con esta se indica explicitamente el modelo con el que va a trabajar el controller
+- Se pueden crear form body, parecido a lo que se hace con el html, para ello se realiza el comando: php artisan make:component NombreComponente, este comando 
+crea 2 archivos, uno ubicado en views y otro en views/component
+- Se pueden crear request para el caso del update, con el comando: php artisan make:request NombreRequest
